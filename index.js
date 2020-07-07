@@ -22,12 +22,7 @@ function mdLinks(path) {
         resolve(arr);
       }
     })
-  })
-  // promise.then((result) => {
-  //   console.log(result);
-  // })   
+  })  
 }
-
-//mdLinks('./test.md');
 
 module.exports = mdLinks;

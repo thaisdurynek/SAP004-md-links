@@ -6,4 +6,4 @@ mdLinks('./test.md')
     console.log(result);
 })
 
-program.parse(argv);
+//program.parse(argv);

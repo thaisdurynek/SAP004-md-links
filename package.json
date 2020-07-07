@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "@thaisdury/mdlinks",
   "version": "1.0.0",
   "description": "Library that extracts, validates and provides statistics from .md files",
   "main": "index.js",

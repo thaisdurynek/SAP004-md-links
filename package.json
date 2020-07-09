@@ -6,6 +6,9 @@
   "directories": {
     "test": "test"
   },
+  "bin": {
+    "md-links": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/thaisdurynek/SAP004-md-links/issues"
   },
-  "homepage": "https://github.com/thaisdurynek/SAP004-md-links#readme"
+  "homepage": "https://github.com/thaisdurynek/SAP004-md-links#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }

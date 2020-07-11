@@ -8,18 +8,17 @@ function mdLinks(path) {
         reject(err.message);
       }
       else if (data) {
-        let arr = [];
         const dataArray = data.match(regEx);
-        dataArray.map((link) => {
+        const bla = dataArray.map((link) => {
           const href = link.match(/\((https*.*)\)/)[1];
           const text = link.match(/\[(\S.*)\]/)[1];
-          arr.push({
+           return {
             href: href,
             text: text,
             file: path
-          })
+          }
         });
-        resolve(arr);
+        resolve(bla);
       }
     })
   })  

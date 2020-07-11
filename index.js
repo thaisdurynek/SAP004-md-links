@@ -9,7 +9,7 @@ function mdLinks(path) {
       }
       else if (data) {
         const dataArray = data.match(regEx);
-        const bla = dataArray.map((link) => {
+        const linksObject = dataArray.map((link) => {
           const href = link.match(/\((https*.*)\)/)[1];
           const text = link.match(/\[(\S.*)\]/)[1];
            return {
@@ -18,7 +18,7 @@ function mdLinks(path) {
             file: path
           }
         });
-        resolve(bla);
+        resolve(linksObject);
       }
     })
   })  

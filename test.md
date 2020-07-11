@@ -8,5 +8,8 @@ Aqui está um link para o site do node: [Node](https://nodejs.org/en/).
 
 * [ ] O coronavírus irá destruir tudo, caramba.
 * [ ] [(Teste unitário.)](https://jestjs.io/docs/pt-BR/getting-started)
+[(Teste unitário.)](https://jestjs.io/docs/pt-BR/getting-started)
 
-exempo: [exemplo](pt.wikipedia.org/wiki/Exemplo)
+exemplo: [exemplo 404](https://app.slack.com/client/SS2TOZ)
+
+exemplo quebrado: [exemplo quebrado](https://haushuahsuahsua)

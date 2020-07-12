@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const mdLinks = require('./index.js');
+
 const path = process.argv[2];
 const [, , , ...options] = process.argv;
 const validate = require('./public/validate.js');
@@ -14,15 +15,13 @@ mdLinks(path, options)
     } else if (options.includes('--validate')) {
       result.forEach((linkArrayItem) => {
         validate(linkArrayItem);
-      })
-    } else if (options.includes('--stats')){
-        console.log(stats(result));
+      });
+    } else if (options.includes('--stats')) {
+      console.log(stats(result));
     } else {
       console.log(result);
     }
-
   })
   .catch((error) => {
-    console.log(error)
-  })
-
+    console.log(error);
+  });

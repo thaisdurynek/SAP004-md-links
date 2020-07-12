@@ -10,6 +10,7 @@
     "md-links": "cli.js"
   },
   "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,9 @@
   },
   "homepage": "https://github.com/thaisdurynek/SAP004-md-links#readme",
   "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "jest": "^26.1.0"
   },
   "dependencies": {

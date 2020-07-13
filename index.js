@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function mdLinks(path) {
+function readLinks(path) {
   const regEx = /\[(\S.*)\]\((https*.*)\)/g;
   return new Promise((resolve, reject) => {
     fs.readFile(path, { encoding: 'utf8' }, (err, data) => {
@@ -23,4 +23,4 @@ function mdLinks(path) {
   });
 }
 
-module.exports = mdLinks;
+module.exports = readLinks;

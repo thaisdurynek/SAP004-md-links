@@ -9,7 +9,9 @@ function validateAndStats(arr) {
   arr.forEach((element) => {
     const currentLink = axios.get(element.href)
       .then(() => {})
-      .catch(() => { broken += 1; });
+      .catch(() => {
+        broken += 1;
+      });
     array.push(currentLink);
   });
   Promise.all(array).then(() => {})

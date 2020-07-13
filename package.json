@@ -11,7 +11,8 @@
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "npm run lint",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",

@@ -11,5 +11,3 @@ Aqui está um link para o site do node: [Node](https://nodejs.org/en/).
 [(Teste unitário.)](https://jestjs.io/docs/pt-BR/getting-started)
 
 exemplo: [exemplo 404](https://app.slack.com/client/SS2TOZ)
-
-exemplo quebrado: [exemplo quebrado](https://haushuahsuahsua)

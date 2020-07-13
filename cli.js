@@ -12,14 +12,16 @@ function mdLinks(file, option) {
   readLinks(file)
     .then((result) => {
       if (option.includes('--validate') && option.includes('--stats')) {
-        statsAndValidate(result);
+        return statsAndValidate(result);
       } else if (option.includes('--validate')) {
-        Promise.all(validate(result))
+        return Promise.all(validate(result))
           .then((res) => (console.log(res)));
       } else if (option.includes('--stats')) {
         console.log(stats(result));
+        return stats(result);
       } else {
         console.log(result);
+        return result;
       }
     })
     .catch((error) => {
